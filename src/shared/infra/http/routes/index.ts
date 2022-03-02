@@ -1,6 +1,6 @@
 import { Request, Response, Router } from "express";
 
-import { StartController } from "@modules/whatsApp/useCases/start/startController";
+import { StartController } from "@modules/whatsapp/useCases/start/startController";
 
 const router = Router();
 
