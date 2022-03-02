@@ -13,7 +13,7 @@ describe("Start WhatsApp QRCode.", () => {
     // createUserUseCase = new CheckEmailExistsUseCase(UsersRepositoryInMemory);
   });
 
-  it("Should be able to authenticate a user", async () => {
+  it("Should be start WhatsApp Session", async () => {
     // const user: ICreateUserDTO = {
     //   email: "user@test.com",
     // };
