@@ -4,6 +4,7 @@ interface IRequest {
 
 interface IResponse {
   success: boolean;
+  message: string;
 }
 
 export { IResponse, IRequest };
