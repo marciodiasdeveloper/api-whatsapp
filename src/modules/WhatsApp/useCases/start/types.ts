@@ -1,12 +1,9 @@
 interface IRequest {
-  token: string;
-  // guild_id: string;
-  // channel_id: string;
+  sessionName: string;
 }
 
 interface IResponse {
-  status: string;
-  url: string;
+  status: boolean;
 }
 
 export { IResponse, IRequest };

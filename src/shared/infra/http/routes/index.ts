@@ -1,18 +1,12 @@
 import { Request, Response, Router } from "express";
 
-// import { ChannelsController } from "@modules/Discord/useCases/channels/channelsController";
-// import { InviteController } from "@modules/Discord/useCases/invite/inviteController";
-// import { LoginOAuthCallbackController } from "@modules/Discord/useCases/loginOAuthCallback/loginOAuthCallbackController";
-// import { LogOutController } from "@modules/Discord/useCases/logOut/logOutController";
+import { StartController } from "@modules/WhatsApp/useCases/start/startController";
 
 const router = Router();
 
-// const loginOAuthCallbackController = new LoginOAuthCallbackController();
-// const inviteController = new InviteController();
-// const channelsController = new ChannelsController();
-// const logOutController = new LogOutController();
+const startController = new StartController();
 
-// router.get('/start', StartController.handle);
+router.get("/start", StartController.handle);
 // router.get('/qrcode', QrCodeController.handle);
 // router.get('/status', StatusController.handle);
 // router.get('/device', DeviceController.handle);

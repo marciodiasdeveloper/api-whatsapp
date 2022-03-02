@@ -9,17 +9,12 @@ class StartController {
     request: Request<unknown, unknown, IRequest>,
     response: Response
   ): Promise<IResponse> {
-    // const inviteUseCase = container.resolve(InviteUseCase);
-    // const { token, guild_id, channel_id } = request.body;
-    // if (token && guild_id && channel_id) {
-    //   const clientLogin = await inviteUseCase.execute(
-    //     token,
-    //     guild_id,
-    //     channel_id
-    //   );
-    //   return response.status(201).json(clientLogin);
-    // }
-    // return response.status(401).json({});
+    const { sessionName } = request.body;
+    const startUseCase = container.resolve(StartUseCase);
+
+    const startSession = await startUseCase.execute(sessionName);
+
+    return response.status(201).json(startSession);
   }
 }
 
