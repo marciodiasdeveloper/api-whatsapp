@@ -6,7 +6,7 @@ const router = Router();
 
 const startController = new StartController();
 
-router.get("/start", StartController.handle);
+router.get("/start", startController.handle);
 // router.get('/qrcode', QrCodeController.handle);
 // router.get('/status', StatusController.handle);
 // router.get('/device', DeviceController.handle);
