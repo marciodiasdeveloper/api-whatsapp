@@ -5,7 +5,7 @@
 // import { CheckEmailExistsUseCase } from "./checkEmailExistsUseCase";
 // let checkEmailExistsUseCase: CheckEmailExistsUseCase;
 
-describe("Discord logout server", () => {
+describe("Start WhatsApp QRCode.", () => {
   beforeEach(() => {
     // checkEmailExistsUseCase = new CheckEmailExistsUseCase({
     //   email,
