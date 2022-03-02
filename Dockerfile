@@ -46,6 +46,6 @@ RUN npm install --production
 #   && sed -i "s|license key here|$NR_KEY|g" /app/src/newrelic.js \
 #   && sed -i "s|My Application|$APP_NAME|g" /app/src/newrelic.js
 
-EXPOSE 3010
+EXPOSE 3100
 
 CMD [ "node", "/app/src/shared/infra/http/server.js" ]
