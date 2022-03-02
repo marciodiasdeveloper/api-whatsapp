@@ -1,0 +1,11 @@
+{
+  "name": "somenode-stuff",
+  "version": "1.0.0",
+  "description": "Some Node Stuff",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "source env.sh; nodemon dist/index.js",
+    "debug": "source env.sh; node --inspect-brk=9229 dist/index.js"
+  }
+}

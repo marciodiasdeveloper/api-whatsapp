@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  app:
+    container_name: api-toolzz-discord
+    build: .
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - 3010:3010
+    volumes:
+      - .:/usr/app
+
+volumes:
+  pgdata:
+    driver: local

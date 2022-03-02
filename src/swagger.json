@@ -1,0 +1,31 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Toolzz Discord 3.0",
+    "description": "This is an API Discord Toolzz Platform",
+    "version": "3.0.0",
+    "contact": {
+      "email": "contato@edulabzz.com.br"
+    }
+  },
+  
+  "paths": {
+    "/discord/client/:institution_id/login": {
+      "post": {
+        "tags": ["Discord"],
+        "summary": "Realizar login no Discord Server.",
+        "description": "Envie os dados obrigatórios para fazer uma autenticação no Discord Server.",
+        "parameters": [            
+          {
+              "name": "token",
+              "in": "body",
+              "description": "The token Webhook Discord user.",
+              "required": true,
+              "type": "string",
+              "format": "string"
+          }
+        ]
+      }
+    }
+  }
+}
