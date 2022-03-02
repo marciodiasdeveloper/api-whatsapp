@@ -17,12 +17,12 @@ import { AppError } from "@shared/errors/appError";
 import { handlingErrors } from "@shared/infra/http/middlewares/handlingErrors";
 
 import swaggerFile from "../../../swagger.json";
-import rateLimiter from "./middlewares/rateLimiter";
+// import rateLimiter from "./middlewares/rateLimiter";
 import { router } from "./routes";
 
 const app = express();
 
-app.use(rateLimiter);
+// app.use(rateLimiter);
 
 Sentry.init({
   dsn: process.env.SENTRY_DSN,

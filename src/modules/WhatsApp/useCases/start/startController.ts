@@ -1,15 +1,17 @@
 import { Request, Response } from "express";
-import { container } from "tsyringe";
+import { injectable, container } from "tsyringe";
 
 import { StartUseCase } from "./startUseCase";
-import { IRequest, IResponse } from "./types";
+import { IRequest, IStartResponse } from "./types";
 
+@injectable()
 class StartController {
+  constructor() {}
   async handle(
     request: Request<unknown, unknown, IRequest>,
     response: Response
-  ): Promise<IResponse> {
-    const { sessionName } = request.body;
+  ): Promise<Response> {
+    const { sessionName } = request.params;
     const startUseCase = container.resolve(StartUseCase);
 
     const startSession = await startUseCase.execute(sessionName);

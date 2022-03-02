@@ -2,9 +2,9 @@ interface IRequest {
   sessionName: string;
 }
 
-interface IResponse {
+interface IStartResponse {
   success: boolean;
   message: string;
 }
 
-export { IResponse, IRequest };
+export { IStartResponse, IRequest };
