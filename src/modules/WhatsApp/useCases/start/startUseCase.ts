@@ -5,7 +5,7 @@ import { IResponse } from "./types";
 @injectable()
 class StartUseCase {
   public async execute(sessionName: string): Promise<IResponse> {
-    return { status: true };
+    return { success: true };
   }
 }
 

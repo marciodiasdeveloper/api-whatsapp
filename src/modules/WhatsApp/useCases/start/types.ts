@@ -3,7 +3,7 @@ interface IRequest {
 }
 
 interface IResponse {
-  status: boolean;
+  success: boolean;
 }
 
 export { IResponse, IRequest };

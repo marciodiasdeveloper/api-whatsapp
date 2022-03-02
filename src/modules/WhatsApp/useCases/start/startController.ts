@@ -8,7 +8,7 @@ class StartController {
   async handle(
     request: Request<unknown, unknown, IRequest>,
     response: Response
-  ): Promise<IResponse> {
+  ): Promise<IResponse[]> {
     const { sessionName } = request.body;
     const startUseCase = container.resolve(StartUseCase);
 
