@@ -42,9 +42,9 @@ COPY --from=builder --chown=node:node /app/dist/ /app/src/
 
 RUN npm install --production
 
-RUN cp /app/node_modules/newrelic/newrelic.js /app/src/newrelic.js \
-  && sed -i "s|license key here|$NR_KEY|g" /app/src/newrelic.js \
-  && sed -i "s|My Application|$APP_NAME|g" /app/src/newrelic.js
+# RUN cp /app/node_modules/newrelic/newrelic.js /app/src/newrelic.js \
+#   && sed -i "s|license key here|$NR_KEY|g" /app/src/newrelic.js \
+#   && sed -i "s|My Application|$APP_NAME|g" /app/src/newrelic.js
 
 EXPOSE 3010
 
