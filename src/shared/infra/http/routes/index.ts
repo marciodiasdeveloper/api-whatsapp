@@ -15,6 +15,7 @@ router.get("/start", startController.handle);
 // router.get('/close', CloseController.handle);
 // router.get('/groups', GroupsController.handle);
 // router.get('/checkPhone', CheckPhoneController.handle);
+// router.get('/battery', BatteryController.handle);
 
 router.get("/", (request: Request, response: Response) => {
   return response.json({ success: true, api: "api-discord" });
