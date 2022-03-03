@@ -11,7 +11,7 @@ class StartController {
     request: Request<unknown, unknown, IRequest>,
     response: Response
   ): Promise<Response> {
-    const { sessionName } = request.params;
+    const { sessionName } = request.query;
     const startUseCase = container.resolve(StartUseCase);
 
     const startSession = await startUseCase.execute(sessionName);

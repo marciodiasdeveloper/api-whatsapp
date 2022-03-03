@@ -8,6 +8,7 @@ class StartUseCase {
     return {
       success: true,
       message: "Conexão com WhatsApp realizada com sucesso!",
+      session: sessionName,
     };
   }
 }
