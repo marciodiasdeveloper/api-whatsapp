@@ -1,3 +1,5 @@
+import { StartUseCase } from "./startUseCase";
+
 describe("WhatsApp Start Controller", () => {
   beforeEach(() => {
     // checkEmailExistsUseCase = new CheckEmailExistsUseCase({
@@ -7,14 +9,12 @@ describe("WhatsApp Start Controller", () => {
   });
 
   it("Should return 400 if sessionName is provided", async () => {
-    const start = new StartController();
-    // const user: ICreateUserDTO = {
-    //   email: "user@test.com",
-    // };
-    // await checkEmailExistsUseCase.execute(user);
-    // checkEmailExistsUseCase = new CheckEmailExistsUseCase({
-    //   email,
-    // });
-    // expect(result).toHaveProperty("token");
+    const sessionName = {};
+
+    const start = new StartUseCase();
+    const httpResponse = await start.execute(sessionName);
+
+    expect(httpResponse.statusCode).toBe(400);
+    expect(httpResponse).toEqual(new Error("Missing param: sessionName"));
   }, 50000);
 });
