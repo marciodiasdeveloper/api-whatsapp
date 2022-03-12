@@ -6,11 +6,10 @@ import { IRequest, IStartResponse } from "./types";
 
 @injectable()
 class StartController {
-  constructor() {}
   async handle(
     request: Request<unknown, unknown, IRequest>,
     response: Response
-  ): Promise<Response> {
+  ): Promise<IStartResponse> {
     const { sessionName } = request.query;
     const startUseCase = container.resolve(StartUseCase);
 
