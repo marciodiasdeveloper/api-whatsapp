@@ -9,7 +9,7 @@ describe("WhatsApp Start Controller", () => {
   });
 
   it("Should return 400 if sessionName is provided", async () => {
-    const sessionName = {};
+    const sessionName = "";
 
     const start = new StartUseCase();
     const httpResponse = await start.execute(sessionName);
