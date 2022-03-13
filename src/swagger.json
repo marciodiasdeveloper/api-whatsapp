@@ -17,9 +17,9 @@
         "description": "",
         "parameters": [            
           {
-              "name": "token",
+              "name": "sessionName",
               "in": "query",
-              "description": "The token API WhatsApp User.",
+              "description": "The sessionName API WhatsApp User.",
               "required": true,
               "type": "string",
               "format": "string"
@@ -27,5 +27,22 @@
         ]
       }
     },
+    "/qrcode": {
+      "post": {
+        "tags": ["WhatsApp"],
+        "summary": "Start session and get qrCode WhatsApp client.",
+        "description": "",
+        "parameters": [            
+          {
+              "name": "sessionName",
+              "in": "query",
+              "description": "The sessionName API WhatsApp User.",
+              "required": true,
+              "type": "string",
+              "format": "string"
+          }
+        ]
+      }
+    }
   }
 }
