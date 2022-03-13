@@ -10,7 +10,7 @@
   },
   
   "paths": {
-    "/get": {
+    "/start": {
       "post": {
         "tags": ["WhatsApp"],
         "summary": "Start session WhatsApp client.",
