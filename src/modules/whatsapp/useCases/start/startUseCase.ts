@@ -1,14 +1,13 @@
 import { inject, injectable } from "tsyringe";
 
-import { IStartResponse } from "./types";
+import { ISessionName } from "./types";
 
 @injectable()
 class StartUseCase {
-  public async execute(sessionName: string): Promise<IStartResponse> {
+  public async execute(sessionName: string): Promise<ISessionName> {
     return {
-      success: true,
-      message: "Conexão com WhatsApp realizada com sucesso!",
-      session: sessionName,
+      sessionName: "Conexão com WhatsApp realizada com sucesso!",
+      state: sessionName,
     };
   }
 }

@@ -1,5 +1,8 @@
 import { StartUseCase } from "./startUseCase";
 
+// Testar caso sessionName não seja enviado como parametro getSession
+// Testar se o client foi iniciado com sucesso.
+
 describe("WhatsApp Start Controller", () => {
   beforeEach(() => {
     // checkEmailExistsUseCase = new CheckEmailExistsUseCase({
