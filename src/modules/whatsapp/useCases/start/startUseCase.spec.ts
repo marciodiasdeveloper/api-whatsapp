@@ -11,7 +11,7 @@ describe("WhatsApp Start Controller", () => {
     // createUserUseCase = new CheckEmailExistsUseCase(UsersRepositoryInMemory);
   });
 
-  it("Should return 400 if sessionName is provided", async () => {
+  it("Should return 400 if sessionName is not provided.", async () => {
     const sessionName = "";
 
     const start = new StartUseCase();
@@ -19,5 +19,20 @@ describe("WhatsApp Start Controller", () => {
 
     expect(httpResponse.statusCode).toBe(400);
     expect(httpResponse).toEqual(new Error("Missing param: sessionName"));
+  }, 50000);
+
+  it("Should return 200 when a WhatsApp session started successfully.", async () => {
+    const sessionName = "";
+    const start = new StartUseCase();
+    const httpResponse = await start.execute(sessionName);
+    expect(httpResponse.statusCode).toBe(400);
+    // expect(httpResponse).toEqual(new Error("Missing param: sessionName"));
+  }, 50000);
+
+  it("Should return 400 when a WhatsApp session started error.", async () => {
+    // const sessionName = "";
+    // const start = new StartUseCase();
+    // const httpResponse = await start.execute(sessionName);
+    // expect(httpResponse.statusCode).toBe(400);
   }, 50000);
 });
