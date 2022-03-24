@@ -6,7 +6,5 @@
 
 # Running
 
-``
-yarn dev
 
-``
+yarn dev
