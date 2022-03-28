@@ -68,7 +68,7 @@ class VenomService {
                   },
               );
     return client;
-}//initSession
+} //initSession
 
 static async setup(sessionName) {
 
