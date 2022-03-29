@@ -84,6 +84,41 @@ class VenomService {
 
     const connectionState = await session.client.getConnectionState();
   }
+
+  async closeSession(sessionName): Promise<boolean> {
+    return true;
+  }
+
+  async getSessions(): Promise<boolean> {
+    return true;
+  }
+
+  async qrCode(): Promise<boolean> {
+    return true;
+  }
+
+  async sendText(): Promise<boolean> {
+    return true;
+  }
+
+  async sendTextGroup(): Promise<boolean> {
+    return true;
+  }
+  async sendFile(): Promise<boolean> {
+    return true;
+  }
+  async sendLinkPreview(): Promise<boolean> {
+    return true;
+  }
+  async getAllChatsGroups(): Promise<boolean> {
+    return true;
+  }
+  async checkPhone(): Promise<boolean> {
+    return true;
+  }
+  async device(): Promise<boolean> {
+    return true;
+  }
 }
 
 export { VenomService };

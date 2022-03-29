@@ -10,7 +10,6 @@ interface IStartResponse {
 
 interface ISessionName {
   sessionName: string;
-  state: string;
 }
 
 export { IStartResponse, IRequest, ISessionName };
