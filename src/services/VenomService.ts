@@ -1,6 +1,12 @@
 import venom from "venom-bot";
 
 class VenomService {
+  public sessions;
+
+  constructor() {
+    this.sessions = [];
+  }
+
   static async start(sessionName) {
     //   VenomService.sessions = VenomService.sessions || []; // start array
 
@@ -32,7 +38,7 @@ class VenomService {
     let foundSession = false;
 
     if (VenomService.sessions) {
-      VenomService.VenomService.forEach((session) => {
+      VenomService.sessions.forEach((session) => {
         if (sessionName == session.name) {
           foundSession = session;
         }
