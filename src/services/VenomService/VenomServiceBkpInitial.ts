@@ -1,3 +1,4 @@
+import fs from "fs";
 import venom from "venom-bot";
 
 class VenomService {
