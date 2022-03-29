@@ -5,7 +5,11 @@
 - [WAITING DEVELOPMENT] - WhatsApp-Web.js - https://github.com/pedroslopez/whatsapp-web.js/
 
 
-# Running
+## Installation
+
+```bash
+> yarn dev
+```
 
 
 yarn dev
