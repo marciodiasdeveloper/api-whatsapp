@@ -7,9 +7,8 @@
 
 ## Installation
 
+to run in development mode run the command below
+
 ```bash
 > yarn dev
 ```
-
-
-yarn dev
