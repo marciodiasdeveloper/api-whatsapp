@@ -10,7 +10,7 @@ class VenomService {
     this.sessions = [];
   }
 
-  async start(sessionName: string) {
+  async start(sessionName: string): Promise<IVenomSession> {
     let session = this.getSession(sessionName);
 
     if (!session) {
