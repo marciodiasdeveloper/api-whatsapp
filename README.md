@@ -1,10 +1,14 @@
 # WhatsApp (API) - (Baileys, WhatsAppWeb.js, Venom)
 
-- Baileys - https://github.com/adiwajshing/Baileys
-- WhatsApp-Web.js - https://github.com/pedroslopez/whatsapp-web.js/
-- Venom Bot - https://github.com/orkestral/venom
-
-# Running
+- [DEVELOPMENT] - Venom Bot - https://github.com/orkestral/venom
+- [WAITING DEVELOPMENT] - Baileys - https://github.com/adiwajshing/Baileys
+- [WAITING DEVELOPMENT] - WhatsApp-Web.js - https://github.com/pedroslopez/whatsapp-web.js/
 
 
-yarn dev
+## Installation
+
+Run in development mode run the command below
+
+```bash
+> yarn dev
+```
